@@ -3,6 +3,7 @@ import { QuizContext } from "../store/QuizContext";
 import Question from "./Question";
 import Button from "../UI/Button";
 
+
 const Quiz = () => {
   const { state, resetQuiz } = useContext(QuizContext);
 
@@ -13,7 +14,7 @@ const Quiz = () => {
         <>
           <div>
             Test Ended
-            <p>Your score is {state.correctAnswersCount}</p>
+            <p>Your score is {state.correctAnswersCount} out of {state.questions.length } </p>
           </div>
 
           <div>

@@ -50,8 +50,7 @@ const Question = () => {
            <Answer
              key={idx}
              index={idx}
-             answerText={ans}
-            
+             answerText={ans}            
              onSelectAnswer={selectAnswer}
              selectedAnswer={state.selectedAnswer}
              correctAnswer={currentQuestion.correctAnswer}
